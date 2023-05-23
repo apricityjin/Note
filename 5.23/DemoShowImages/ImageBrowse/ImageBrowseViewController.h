@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ImageBrowseViewController : UIViewController
 
-@property (strong, nonatomic) NSArray <NSString *> * imageNameAry;
+@property (strong, nonatomic) NSArray <UIImage *> * imageAry;
 @property (strong, nonatomic) NSIndexPath * indexPath;
 
 @end

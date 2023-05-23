@@ -12,26 +12,26 @@
 + (NSArray<ImagesModel *> *)getImagesModels {
     NSArray<NSDictionary *>* models = @[
         @{
-            @"title": @"手机图片",
-            @"number": @225,
-            @"imgName":@"image0"
+            @"title": @"插画",
+            @"number": @10,
+            @"imageName":@"https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF"
         },
         @{
-            @"title": @"内置图片",
-            @"number": @67,
-            @"imgName":@"image1"
+            @"title": @"皮影戏",
+            @"number": @20,
+            @"imageName":@"https://t7.baidu.com/it/u=2168645659,3174029352&fm=193&f=GIF"
         },
         @{
-            @"title": @"其他图片",
+            @"title": @"宠物",
             @"number": @13,
-            @"imgName":@"image2"
+            @"imageName":@"https://t7.baidu.com/it/u=1831997705,836992814&fm=193&f=GIF"
         }];
     NSMutableArray * mAry = [NSMutableArray array];
     for (NSDictionary * model in models) {
         ImagesModel * m = [[ImagesModel alloc] init];
         m.title = [model valueForKey:@"title"];
         m.number = [[model valueForKey:@"number"] intValue];
-        m.imgName = [model valueForKey:@"imgName"];
+        m.imageName = [model valueForKey:@"imageName"];
         [mAry addObject:m];
     }
     

@@ -7,10 +7,11 @@
 
 #import "ShowImagesCollectionViewCell.h"
 #import "Masonry.h"
+#import "ImageDownloader.h"
 
 @interface ShowImagesCollectionViewCell ()
 
-@property (strong, nonatomic) UIImageView * imageView;
+
 @property (strong, nonatomic) UIImageView * selectingImageView;
 
 @end
@@ -40,11 +41,6 @@
 }
 
 #pragma mark - setter
-
-- (void)setCellModel:(ShowImagesModel *)cellModel {
-    _cellModel = cellModel;
-    self.imageView.image = [UIImage imageNamed:cellModel.imgName];
-}
 
 - (void)setBeginEditing:(BOOL)editing {
     _beginEditing = editing;

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ShowImagesCollectionViewCell : UICollectionViewCell
 
 @property (assign, nonatomic, getter=isBedinEditing) BOOL beginEditing;
-@property (strong, nonatomic) ShowImagesModel * cellModel;
+@property (strong, nonatomic) UIImageView * imageView;
 
 @end
 

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (copy, nonatomic) NSString * title;
 @property (assign, nonatomic) NSInteger number;
-@property (copy, nonatomic) NSString * imgName;
+@property (copy, nonatomic) NSString * imageName;
 
 + (NSArray <ImagesModel *> *)getImagesModels;
 

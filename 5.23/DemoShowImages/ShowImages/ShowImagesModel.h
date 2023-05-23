@@ -6,16 +6,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ShowImagesModel : NSObject
 
-@property (strong, nonatomic) NSString * imgName;
+@property (strong, nonatomic) UIImage * image;
 @property (assign, nonatomic, getter=isSelected) BOOL selected;
 
-+ (NSMutableArray <ShowImagesModel *> *)getShowImagesModelsWithNumber:(NSInteger)number
-                                                                  row:(NSInteger)row;
++ (NSMutableArray <ShowImagesModel *> *)getShowImagesModelsWithNumber:(NSInteger)number row:(NSInteger)row;
 
 @end
 

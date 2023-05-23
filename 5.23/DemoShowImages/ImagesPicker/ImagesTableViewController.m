@@ -23,12 +23,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.title = @"图片";
     [self.tableView registerClass:ImagePickerTableViewCell.class
            forCellReuseIdentifier:NSStringFromClass(ImagePickerTableViewCell.class)];
@@ -40,9 +34,10 @@
 
 - (void)loadData {
     self.dataAry = [ImagesModel getImagesModels];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.tableView reloadData];
-    });
+//    正常情况下这里的代码需要运行，但是这里的数据从本地获取，直接进行reloadData操作会造成cell重复加载。
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        [self.tableView reloadData];
+//    });
 }
 
 #pragma mark - Table view data source
@@ -96,6 +91,7 @@
 
 - (void)rightBarButtonItemDidClicked {
     [self loadData];
+    [self.tableView reloadData];
 }
 
 #pragma mark - getter

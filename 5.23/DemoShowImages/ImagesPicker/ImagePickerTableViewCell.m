@@ -7,6 +7,7 @@
 
 #import "ImagePickerTableViewCell.h"
 #import "Masonry.h"
+#import "ImageDownloader.h"
 
 @interface ImagePickerTableViewCell ()
 
@@ -33,7 +34,7 @@
         make.centerY.mas_equalTo(self.contentView);
         make.left.top.mas_equalTo(self.contentView).mas_offset(15);
         make.bottom.mas_equalTo(self.contentView).mas_offset(-15);
-        make.height.width.mas_lessThanOrEqualTo(80);
+        make.height.width.mas_equalTo(80);
     }];
     [self.contentView addSubview:self.titleLabel];
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -56,7 +57,19 @@
 
 - (void)setCellModel:(ImagesModel *)cellModel {
     _cellModel = cellModel;
-    [self.titleImageView setImage:[UIImage imageNamed:cellModel.imgName]];
+    NSURL * url = [NSURL URLWithString:cellModel.imageName];
+    __weak typeof(self) weakSelf = self;
+    [[ImageDownloader new]
+     downloadImageFromURL:url
+     completionBlock:^(UIImage * _Nonnull image) {
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            typeof(self) strongSelf = weakSelf;
+            strongSelf.titleImageView.image = image;
+            [strongSelf.titleImageView setNeedsDisplay];
+        });
+    }];
+    
+    [self.arrowImageView setImage:[UIImage systemImageNamed:@"arrow.right"]];
     self.titleLabel.text = cellModel.title;
     self.numberLabel.text = [NSString stringWithFormat:@"%zd", cellModel.number];
 }

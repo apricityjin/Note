@@ -64,7 +64,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     NSInteger row = 1.5 + self.collectionView.contentOffset.x / self.view.frame.size.width;
-    self.titleLabel.text = [NSString stringWithFormat:@"%zd / %zd", row, self.imageNameAry.count];
+    self.titleLabel.text = [NSString stringWithFormat:@"%zd / %zd", row, self.imageAry.count];
     self.indexPath = [NSIndexPath indexPathWithIndex:row];
     
 }
@@ -76,13 +76,13 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.imageNameAry.count;
+    return self.imageAry.count;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ImageBrowseCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(ImageBrowseCollectionViewCell.class) forIndexPath:indexPath];
     
-    cell.image = [UIImage imageNamed: self.imageNameAry[indexPath.row]];
+    cell.image = self.imageAry[indexPath.row];
     
     return cell;
 }
@@ -116,8 +116,8 @@
 
 #pragma mark - setter
 
-- (void)setImageNameAry:(NSArray *)images {
-    _imageNameAry = images;
+- (void)setImageAry:(NSArray *)images {
+    _imageAry = images;
     [self.collectionView reloadData];
 }
 
@@ -161,7 +161,7 @@
 - (UILabel *)titleLabel {
     if (_titleLabel == nil) {
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.text = [NSString stringWithFormat:@"1 / %zd", self.imageNameAry.count];
+        _titleLabel.text = [NSString stringWithFormat:@"1 / %zd", self.imageAry.count];
     }
     return _titleLabel;
 }

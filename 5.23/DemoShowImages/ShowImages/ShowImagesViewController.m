@@ -10,7 +10,7 @@
 #import "ShowImagesModel.h"
 #import "Masonry.h"
 #import "BottomView.h"
-
+#import "ImageDownloader.h"
 #import "ImageBrowseViewController.h"
 
 @interface ShowImagesViewController ()
@@ -46,16 +46,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    dispatch_async(dispatch_queue_create("com.test", DISPATCH_QUEUE_SERIAL), ^{
-        [self loadData];
-    });
-    
+    [self loadData];
     [self layoutMyViews];
 }
 
 - (void)loadData {
     self.dataMAry = [ShowImagesModel getShowImagesModelsWithNumber:self.number row:self.row];
-    dispatch_sync(dispatch_get_main_queue(), ^{
+
+    dispatch_barrier_async(dispatch_get_main_queue(), ^{
         [self.collectionView reloadData];
     });
 }
@@ -89,7 +87,9 @@
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ShowImagesCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(ShowImagesCollectionViewCell.class) forIndexPath:indexPath];
     
-    cell.cellModel = self.dataMAry[indexPath.row];
+    
+    cell.imageView.image = [self.dataMAry objectAtIndex:indexPath.row].image;
+    [cell.imageView setNeedsDisplay];
     cell.beginEditing = self.isEditing;
 
     return cell;
@@ -97,16 +97,21 @@
 
 #pragma mark - UICollectionViewDelegate
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    ;
+}
+
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (self.editing) {
         [self.bottomView updateSelectedCount:self.collectionView.indexPathsForSelectedItems.count];
     } else {
         ImageBrowseViewController * vc = [[ImageBrowseViewController alloc] init];
         NSMutableArray * mAry = [NSMutableArray array];
-        for (ShowImagesModel * model in self.dataMAry) {
-            [mAry addObject:model.imgName];
-        }
-        vc.imageNameAry = mAry.copy;
+        [self.dataMAry enumerateObjectsUsingBlock:^(ShowImagesModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [mAry addObject:obj.image];
+        }];
+        vc.imageAry = mAry.copy;
         vc.modalPresentationStyle = UIModalPresentationFullScreen;
         vc.indexPath = indexPath;
         
@@ -120,7 +125,6 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
     [self.bottomView updateSelectedCount:self.collectionView.indexPathsForSelectedItems.count];
-    
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout

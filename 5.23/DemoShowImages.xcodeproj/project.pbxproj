@@ -32,6 +32,7 @@
 		959BC5B02A171882005DFC44 /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959BC5AF2A171882005DFC44 /* BottomView.m */; };
 		959BC61E2A1C68D7005DFC44 /* ImageBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959BC61B2A1C68D7005DFC44 /* ImageBrowseViewController.m */; };
 		959BC61F2A1C68D7005DFC44 /* ImageBrowseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 959BC61C2A1C68D7005DFC44 /* ImageBrowseCollectionViewCell.m */; };
+		959BC64A2A1CB132005DFC44 /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 959BC6492A1CB132005DFC44 /* ImageDownloader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,8 @@
 		959BC61B2A1C68D7005DFC44 /* ImageBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowseViewController.m; sourceTree = "<group>"; };
 		959BC61C2A1C68D7005DFC44 /* ImageBrowseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowseCollectionViewCell.m; sourceTree = "<group>"; };
 		959BC61D2A1C68D7005DFC44 /* ImageBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBrowseViewController.h; sourceTree = "<group>"; };
+		959BC6482A1CB132005DFC44 /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
+		959BC6492A1CB132005DFC44 /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 				959BC5372A1606C4005DFC44 /* ViewController.m */,
 				959BC5492A16089C005DFC44 /* NavigationController.h */,
 				959BC54A2A16089C005DFC44 /* NavigationController.m */,
+				959BC64B2A1CB13B005DFC44 /* ImageDownloader */,
 				959BC6192A1C68D7005DFC44 /* ImageBrowse */,
 				959BC5A72A162246005DFC44 /* ShowImages */,
 				959BC59D2A161118005DFC44 /* ImagesPicker */,
@@ -203,12 +207,21 @@
 		959BC6192A1C68D7005DFC44 /* ImageBrowse */ = {
 			isa = PBXGroup;
 			children = (
-				959BC61A2A1C68D7005DFC44 /* ImageBrowseCollectionViewCell.h */,
-				959BC61B2A1C68D7005DFC44 /* ImageBrowseViewController.m */,
-				959BC61C2A1C68D7005DFC44 /* ImageBrowseCollectionViewCell.m */,
 				959BC61D2A1C68D7005DFC44 /* ImageBrowseViewController.h */,
+				959BC61B2A1C68D7005DFC44 /* ImageBrowseViewController.m */,
+				959BC61A2A1C68D7005DFC44 /* ImageBrowseCollectionViewCell.h */,
+				959BC61C2A1C68D7005DFC44 /* ImageBrowseCollectionViewCell.m */,
 			);
 			path = ImageBrowse;
+			sourceTree = "<group>";
+		};
+		959BC64B2A1CB13B005DFC44 /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				959BC6482A1CB132005DFC44 /* ImageDownloader.h */,
+				959BC6492A1CB132005DFC44 /* ImageDownloader.m */,
+			);
+			path = ImageDownloader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +299,7 @@
 				959BC5932A160B64005DFC44 /* MASLayoutConstraint.m in Sources */,
 				959BC59C2A1610A1005DFC44 /* ImagesTableViewController.m in Sources */,
 				959BC54B2A16089C005DFC44 /* NavigationController.m in Sources */,
+				959BC64A2A1CB132005DFC44 /* ImageDownloader.m in Sources */,
 				959BC5432A1606C6005DFC44 /* main.m in Sources */,
 				959BC5982A160B64005DFC44 /* MASViewAttribute.m in Sources */,
 				959BC5942A160B64005DFC44 /* NSArray+MASAdditions.m in Sources */,

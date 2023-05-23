@@ -7,47 +7,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "39BF6312-6DA2-4CAB-9AFA-0DB804E75690"
+            uuid = "5D25C6FD-BC1E-4654-8E49-6670597C2551"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DemoShowImages/ShowImages/ShowImagesViewController.m"
+            filePath = "DemoShowImages/ImageDownloader/ImageDownloader.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "ShowImagesViewController"
-            landmarkType = "3">
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "-dealloc"
+            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "39BF6312-6DA2-4CAB-9AFA-0DB804E75690 - dd6594ef584a80fd"
+                  uuid = "5D25C6FD-BC1E-4654-8E49-6670597C2551 - c6dd75cdbe4b601a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[ShowImagesViewController collectionView:layout:minimumLineSpacingForSectionAtIndex:]"
+                  symbolName = "-[ImageDownloader downloadImageFromURL:]"
                   moduleName = "DemoShowImages"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apricity/Desktop/xcodePrj/DemoShowImages/DemoShowImages/ShowImages/ShowImagesViewController.m"
+                  urlString = "file:///Users/apricity/Desktop/Note/5.23/DemoShowImages/ImageDownloader/ImageDownloader.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "81">
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "80">
                </Location>
                <Location
-                  uuid = "39BF6312-6DA2-4CAB-9AFA-0DB804E75690 - 929b9775a3544ef4"
+                  uuid = "5D25C6FD-BC1E-4654-8E49-6670597C2551 - 88f13ddf87b20305"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[ShowImagesViewController collectionView:didDeselectItemAtIndexPath:]"
+                  symbolName = "-[ImageDownloader dealloc]"
                   moduleName = "DemoShowImages"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apricity/Desktop/xcodePrj/DemoShowImages/DemoShowImages/ShowImages/ShowImagesViewController.m"
+                  urlString = "file:///Users/apricity/Desktop/Note/5.23/DemoShowImages/ImageDownloader/ImageDownloader.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "69">
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>

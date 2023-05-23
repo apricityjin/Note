@@ -6,6 +6,7 @@
 //
 
 #import "ShowImagesModel.h"
+#import "ImageDownloader.h"
 
 @implementation ShowImagesModel
 
@@ -15,7 +16,21 @@
     
     for (int i = 0; i < number; i++) {
         ShowImagesModel * model = [[ShowImagesModel alloc] init];
-        model.imgName = [NSString stringWithFormat:@"image%zd", row];
+        NSString * imageName;
+        if (row == 0) {
+            imageName = @"https://t7.baidu.com/it/u=1819248061,230866778&fm=193&f=GIF";
+        } else if (row == 1) {
+            imageName = @"https://t7.baidu.com/it/u=2168645659,3174029352&fm=193&f=GIF";
+        } else if (row == 2) {
+            imageName = @"https://t7.baidu.com/it/u=1831997705,836992814&fm=193&f=GIF";
+        }
+        
+        NSURL * url = [NSURL URLWithString:imageName];
+        [[ImageDownloader new]
+         downloadImageFromURL:url
+         completionBlock:^(UIImage * _Nonnull image) {
+            model.image = image;
+        }];
         model.selected = NO;
         [mAry addObject:model];
     }
