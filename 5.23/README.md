@@ -1,1 +1,2 @@
 1. 整合第一周学习时编写的示例代码，包括ImagePrviewer、ImageMagenification这两个类似图片app和放大图片功能的代码。
+2. 添加ImageDownloader类进行网络图片的获取。
