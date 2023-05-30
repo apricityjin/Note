@@ -1,0 +1,2 @@
+1. 使用渲染帧图片的方法播放图片时，虽然将CMSampleBufferRef转化为CVPixelBufferRef。但是无法成功调用CVMetalTextureCacheCreateTextureFromImage、CVMetalTextureCacheCreateTextureFromImage这两个中间方法，导致无法初始化texture，最终无法成功播放视频。
+2. 采用渲染图片的方法将CMSampleBufferRef成功转化为CGImage但是也无法播放视频。
