@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		950D1D482A298081000FEBD3 /* fg.svg in Resources */ = {isa = PBXBuildFile; fileRef = 950D1D2B2A298081000FEBD3 /* fg.svg */; };
+		950D1D492A298081000FEBD3 /* bg.svg in Resources */ = {isa = PBXBuildFile; fileRef = 950D1D2C2A298081000FEBD3 /* bg.svg */; };
+		950D1D4B2A298081000FEBD3 /* dict.c in Sources */ = {isa = PBXBuildFile; fileRef = 950D1D322A298081000FEBD3 /* dict.c */; };
+		950D1D4C2A298081000FEBD3 /* priorityq.c in Sources */ = {isa = PBXBuildFile; fileRef = 950D1D342A298081000FEBD3 /* priorityq.c */; };
+		950D1D4D2A298081000FEBD3 /* sweep.c in Sources */ = {isa = PBXBuildFile; fileRef = 950D1D362A298081000FEBD3 /* sweep.c */; };
+		950D1D4E2A298081000FEBD3 /* geom.c in Sources */ = {isa = PBXBuildFile; fileRef = 950D1D372A298081000FEBD3 /* geom.c */; };
+		950D1D4F2A298081000FEBD3 /* tess.c in Sources */ = {isa = PBXBuildFile; fileRef = 950D1D392A298081000FEBD3 /* tess.c */; };
+		950D1D502A298081000FEBD3 /* bucketalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 950D1D3D2A298081000FEBD3 /* bucketalloc.c */; };
+		950D1D512A298081000FEBD3 /* mesh.c in Sources */ = {isa = PBXBuildFile; fileRef = 950D1D3E2A298081000FEBD3 /* mesh.c */; };
+		950D1D522A298081000FEBD3 /* nanosvg.c in Sources */ = {isa = PBXBuildFile; fileRef = 950D1D412A298081000FEBD3 /* nanosvg.c */; };
+		950D1D532A298081000FEBD3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 950D1D432A298081000FEBD3 /* README.md */; };
+		950D1D542A298081000FEBD3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 950D1D442A298081000FEBD3 /* .gitignore */; };
+		950D1D552A298081000FEBD3 /* alg_outline.md in Resources */ = {isa = PBXBuildFile; fileRef = 950D1D452A298081000FEBD3 /* alg_outline.md */; };
+		950D1D562A298081000FEBD3 /* premake4.lua in Resources */ = {isa = PBXBuildFile; fileRef = 950D1D462A298081000FEBD3 /* premake4.lua */; };
+		950D1D572A298081000FEBD3 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 950D1D472A298081000FEBD3 /* LICENSE.txt */; };
+		951B82FA2A28B0B10068BBFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 951B82F92A28B0B10068BBFA /* AppDelegate.m */; };
+		951B82FD2A28B0B10068BBFA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 951B82FC2A28B0B10068BBFA /* SceneDelegate.m */; };
+		951B83002A28B0B10068BBFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 951B82FF2A28B0B10068BBFA /* ViewController.m */; };
+		951B83032A28B0B10068BBFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951B83012A28B0B10068BBFA /* Main.storyboard */; };
+		951B83052A28B0B30068BBFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951B83042A28B0B30068BBFA /* Assets.xcassets */; };
+		951B83082A28B0B30068BBFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951B83062A28B0B30068BBFA /* LaunchScreen.storyboard */; };
+		951B830B2A28B0B30068BBFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 951B830A2A28B0B30068BBFA /* main.m */; };
+		951B83142A28B0D10068BBFA /* DMShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 951B83132A28B0D00068BBFA /* DMShaders.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		950D1D2B2A298081000FEBD3 /* fg.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fg.svg; sourceTree = "<group>"; };
+		950D1D2C2A298081000FEBD3 /* bg.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bg.svg; sourceTree = "<group>"; };
+		950D1D302A298081000FEBD3 /* tesselator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tesselator.h; sourceTree = "<group>"; };
+		950D1D322A298081000FEBD3 /* dict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dict.c; sourceTree = "<group>"; };
+		950D1D332A298081000FEBD3 /* tess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tess.h; sourceTree = "<group>"; };
+		950D1D342A298081000FEBD3 /* priorityq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = priorityq.c; sourceTree = "<group>"; };
+		950D1D352A298081000FEBD3 /* bucketalloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bucketalloc.h; sourceTree = "<group>"; };
+		950D1D362A298081000FEBD3 /* sweep.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sweep.c; sourceTree = "<group>"; };
+		950D1D372A298081000FEBD3 /* geom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = geom.c; sourceTree = "<group>"; };
+		950D1D382A298081000FEBD3 /* mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; };
+		950D1D392A298081000FEBD3 /* tess.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tess.c; sourceTree = "<group>"; };
+		950D1D3A2A298081000FEBD3 /* dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict.h; sourceTree = "<group>"; };
+		950D1D3B2A298081000FEBD3 /* priorityq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = priorityq.h; sourceTree = "<group>"; };
+		950D1D3C2A298081000FEBD3 /* sweep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sweep.h; sourceTree = "<group>"; };
+		950D1D3D2A298081000FEBD3 /* bucketalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bucketalloc.c; sourceTree = "<group>"; };
+		950D1D3E2A298081000FEBD3 /* mesh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mesh.c; sourceTree = "<group>"; };
+		950D1D3F2A298081000FEBD3 /* geom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geom.h; sourceTree = "<group>"; };
+		950D1D412A298081000FEBD3 /* nanosvg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nanosvg.c; sourceTree = "<group>"; };
+		950D1D422A298081000FEBD3 /* nanosvg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nanosvg.h; sourceTree = "<group>"; };
+		950D1D432A298081000FEBD3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		950D1D442A298081000FEBD3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		950D1D452A298081000FEBD3 /* alg_outline.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = alg_outline.md; sourceTree = "<group>"; };
+		950D1D462A298081000FEBD3 /* premake4.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = premake4.lua; sourceTree = "<group>"; };
+		950D1D472A298081000FEBD3 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		951B82F52A28B0B10068BBFA /* DemoLibtess2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoLibtess2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		951B82F82A28B0B10068BBFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		951B82F92A28B0B10068BBFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		951B82FB2A28B0B10068BBFA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		951B82FC2A28B0B10068BBFA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		951B82FE2A28B0B10068BBFA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		951B82FF2A28B0B10068BBFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		951B83022A28B0B10068BBFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		951B83042A28B0B30068BBFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		951B83072A28B0B30068BBFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		951B83092A28B0B30068BBFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		951B830A2A28B0B30068BBFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		951B83112A28B0D00068BBFA /* DMShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMShaderTypes.h; sourceTree = "<group>"; };
+		951B83132A28B0D00068BBFA /* DMShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = DMShaders.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		951B82F22A28B0B10068BBFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		950D1D292A298081000FEBD3 /* libtess2-master */ = {
+			isa = PBXGroup;
+			children = (
+				950D1D2A2A298081000FEBD3 /* Bin */,
+				950D1D2F2A298081000FEBD3 /* Include */,
+				950D1D312A298081000FEBD3 /* Source */,
+				950D1D402A298081000FEBD3 /* Contrib */,
+				950D1D432A298081000FEBD3 /* README.md */,
+				950D1D442A298081000FEBD3 /* .gitignore */,
+				950D1D452A298081000FEBD3 /* alg_outline.md */,
+				950D1D462A298081000FEBD3 /* premake4.lua */,
+				950D1D472A298081000FEBD3 /* LICENSE.txt */,
+			);
+			path = "libtess2-master";
+			sourceTree = "<group>";
+		};
+		950D1D2A2A298081000FEBD3 /* Bin */ = {
+			isa = PBXGroup;
+			children = (
+				950D1D2B2A298081000FEBD3 /* fg.svg */,
+				950D1D2C2A298081000FEBD3 /* bg.svg */,
+			);
+			path = Bin;
+			sourceTree = "<group>";
+		};
+		950D1D2F2A298081000FEBD3 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				950D1D302A298081000FEBD3 /* tesselator.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		950D1D312A298081000FEBD3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				950D1D322A298081000FEBD3 /* dict.c */,
+				950D1D332A298081000FEBD3 /* tess.h */,
+				950D1D342A298081000FEBD3 /* priorityq.c */,
+				950D1D352A298081000FEBD3 /* bucketalloc.h */,
+				950D1D362A298081000FEBD3 /* sweep.c */,
+				950D1D372A298081000FEBD3 /* geom.c */,
+				950D1D382A298081000FEBD3 /* mesh.h */,
+				950D1D392A298081000FEBD3 /* tess.c */,
+				950D1D3A2A298081000FEBD3 /* dict.h */,
+				950D1D3B2A298081000FEBD3 /* priorityq.h */,
+				950D1D3C2A298081000FEBD3 /* sweep.h */,
+				950D1D3D2A298081000FEBD3 /* bucketalloc.c */,
+				950D1D3E2A298081000FEBD3 /* mesh.c */,
+				950D1D3F2A298081000FEBD3 /* geom.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		950D1D402A298081000FEBD3 /* Contrib */ = {
+			isa = PBXGroup;
+			children = (
+				950D1D412A298081000FEBD3 /* nanosvg.c */,
+				950D1D422A298081000FEBD3 /* nanosvg.h */,
+			);
+			path = Contrib;
+			sourceTree = "<group>";
+		};
+		951B82EC2A28B0B10068BBFA = {
+			isa = PBXGroup;
+			children = (
+				951B82F72A28B0B10068BBFA /* DemoLibtess2 */,
+				951B82F62A28B0B10068BBFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		951B82F62A28B0B10068BBFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				951B82F52A28B0B10068BBFA /* DemoLibtess2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		951B82F72A28B0B10068BBFA /* DemoLibtess2 */ = {
+			isa = PBXGroup;
+			children = (
+				950D1D292A298081000FEBD3 /* libtess2-master */,
+				951B82F82A28B0B10068BBFA /* AppDelegate.h */,
+				951B82F92A28B0B10068BBFA /* AppDelegate.m */,
+				951B82FB2A28B0B10068BBFA /* SceneDelegate.h */,
+				951B82FC2A28B0B10068BBFA /* SceneDelegate.m */,
+				951B82FE2A28B0B10068BBFA /* ViewController.h */,
+				951B82FF2A28B0B10068BBFA /* ViewController.m */,
+				951B83132A28B0D00068BBFA /* DMShaders.metal */,
+				951B83112A28B0D00068BBFA /* DMShaderTypes.h */,
+				951B83012A28B0B10068BBFA /* Main.storyboard */,
+				951B83042A28B0B30068BBFA /* Assets.xcassets */,
+				951B83062A28B0B30068BBFA /* LaunchScreen.storyboard */,
+				951B83092A28B0B30068BBFA /* Info.plist */,
+				951B830A2A28B0B30068BBFA /* main.m */,
+			);
+			path = DemoLibtess2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		951B82F42A28B0B10068BBFA /* DemoLibtess2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 951B830E2A28B0B30068BBFA /* Build configuration list for PBXNativeTarget "DemoLibtess2" */;
+			buildPhases = (
+				951B82F12A28B0B10068BBFA /* Sources */,
+				951B82F22A28B0B10068BBFA /* Frameworks */,
+				951B82F32A28B0B10068BBFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoLibtess2;
+			productName = DemoLibtess2;
+			productReference = 951B82F52A28B0B10068BBFA /* DemoLibtess2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		951B82ED2A28B0B10068BBFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					951B82F42A28B0B10068BBFA = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 951B82F02A28B0B10068BBFA /* Build configuration list for PBXProject "DemoLibtess2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 951B82EC2A28B0B10068BBFA;
+			productRefGroup = 951B82F62A28B0B10068BBFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				951B82F42A28B0B10068BBFA /* DemoLibtess2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		951B82F32A28B0B10068BBFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				950D1D552A298081000FEBD3 /* alg_outline.md in Resources */,
+				950D1D532A298081000FEBD3 /* README.md in Resources */,
+				950D1D542A298081000FEBD3 /* .gitignore in Resources */,
+				950D1D492A298081000FEBD3 /* bg.svg in Resources */,
+				951B83082A28B0B30068BBFA /* LaunchScreen.storyboard in Resources */,
+				950D1D482A298081000FEBD3 /* fg.svg in Resources */,
+				950D1D562A298081000FEBD3 /* premake4.lua in Resources */,
+				951B83052A28B0B30068BBFA /* Assets.xcassets in Resources */,
+				950D1D572A298081000FEBD3 /* LICENSE.txt in Resources */,
+				951B83032A28B0B10068BBFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		951B82F12A28B0B10068BBFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				950D1D512A298081000FEBD3 /* mesh.c in Sources */,
+				951B83142A28B0D10068BBFA /* DMShaders.metal in Sources */,
+				950D1D522A298081000FEBD3 /* nanosvg.c in Sources */,
+				951B83002A28B0B10068BBFA /* ViewController.m in Sources */,
+				950D1D4B2A298081000FEBD3 /* dict.c in Sources */,
+				951B82FA2A28B0B10068BBFA /* AppDelegate.m in Sources */,
+				951B830B2A28B0B30068BBFA /* main.m in Sources */,
+				950D1D4E2A298081000FEBD3 /* geom.c in Sources */,
+				950D1D4F2A298081000FEBD3 /* tess.c in Sources */,
+				950D1D502A298081000FEBD3 /* bucketalloc.c in Sources */,
+				950D1D4D2A298081000FEBD3 /* sweep.c in Sources */,
+				951B82FD2A28B0B10068BBFA /* SceneDelegate.m in Sources */,
+				950D1D4C2A298081000FEBD3 /* priorityq.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		951B83012A28B0B10068BBFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				951B83022A28B0B10068BBFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		951B83062A28B0B30068BBFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				951B83072A28B0B30068BBFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		951B830C2A28B0B30068BBFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		951B830D2A28B0B30068BBFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		951B830F2A28B0B30068BBFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoLibtess2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apricityjin.DemoLibtess2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		951B83102A28B0B30068BBFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoLibtess2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apricityjin.DemoLibtess2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		951B82F02A28B0B10068BBFA /* Build configuration list for PBXProject "DemoLibtess2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				951B830C2A28B0B30068BBFA /* Debug */,
+				951B830D2A28B0B30068BBFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		951B830E2A28B0B30068BBFA /* Build configuration list for PBXNativeTarget "DemoLibtess2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				951B830F2A28B0B30068BBFA /* Debug */,
+				951B83102A28B0B30068BBFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 951B82ED2A28B0B10068BBFA /* Project object */;
+}
